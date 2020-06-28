@@ -30,7 +30,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: httpd-groovy-web
+  name: httpd-g-web
   labels:
     app: httpd
 spec:
@@ -48,10 +48,10 @@ spec:
     spec:
       containers:
       - image: sunny078/apache-webserver-php:v1
-        name: httpd-groovy-web
+        name: httpd-g-web
         ports:
         - containerPort: 80
-          name: httpd-groovy-web
+          name: httpd-g-web
         volumeMounts:
         - name: httpd-web-persistent-storage
           mountPath: /var/www/html
