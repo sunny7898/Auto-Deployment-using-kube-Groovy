@@ -17,7 +17,7 @@ job('G Job1') {
 job('G Job2') {
     description('Job2')
 	scm {
-        	github('sunny7898/Task-5-Website-Deployment','master')
+        	github('sunny7898/Auto-Deployment-using-kube-Groovy','master')
     		}
 	triggers {
         		upstream('G Job1', 'SUCCESS')
